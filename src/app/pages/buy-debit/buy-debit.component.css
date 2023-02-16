@@ -1,0 +1,15 @@
+.container {
+    border: 4px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.titles {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.text{
+    color: black;
+}
