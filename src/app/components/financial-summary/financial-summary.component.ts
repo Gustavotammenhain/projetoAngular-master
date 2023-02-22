@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-financial-summary',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinancialSummaryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {
+    
+   }
+
+  @Input() data: any;
 
   ngOnInit(): void {
+    console.log(this.data)
   }
 
+
+    goToRoute(route: any){
+      
+      this.router.navigate([route])
+
+    }
 }
+

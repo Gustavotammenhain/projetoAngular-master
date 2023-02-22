@@ -1,37 +1,41 @@
 
 
 <div class="container">
-    <div class="one">Gasto no mês: R$ 634.874,00</div>
-    
-</div>
-
-<div class="container">
-    <div class="two">Compras nos ultimos 30 dias</div>
-    
-</div>
-
-<div class="container">
-    <div class="twoo"> R$ 29384874848</div>
-   
-</div>
-<div class="container">
-    <div class="type-left">Evolução Compras Débito:</div>
-
-    <div class="three">
-        <mat-progress-bar mode="determinate" value="70" >R$ 2.597,98</mat-progress-bar>
+    <div class="box">
+        <div class="title">Saldo: R$ {{data.totalBalance}}</div>
     </div>
     
-</div>
-<div class="container">
-    <div class="type-leftt">Evolução Compras Crédito:</div>
-    
-    <div class="four">
-        <mat-progress-bar mode="determinate" value="50" ><label for="">R$ 2.587,98</label></mat-progress-bar>
+
+    <div class="description">
+        <div class="sub-title">Compras nos ultimos 30 dias</div>
+        <div class="value">R$ {{data.lastBuys}}</div>
     </div>
-    
-</div>
-<div class="container">
-    <div class="type">Compras Debito</div>
-    <div class="type">Compras Credito</div>
-  
+
+    <div class="progress">
+        <div class="progress-item">
+            <label for="">Debito</label>
+            <mat-progress-bar mode="determinate" value="{{data.totalDebit}}" ></mat-progress-bar>
+        </div>
+            
+        <div class="progress-item">
+            <label for="">Credito</label>
+            <mat-progress-bar mode="determinate" value="{{data.totalCredit}}" ></mat-progress-bar>
+        </div>
+            
+
+    </div>
+
+    <div class="buttons">
+
+        
+        <div class="box separator" (click)="goToRoute('/buy-debit')">Compras Debito</div>
+
+        <div class="box" (click)="goToRoute('/buy-credit')">Compras Credito</div>
+       
+      
+    </div>
+
+
+
+
 </div>
