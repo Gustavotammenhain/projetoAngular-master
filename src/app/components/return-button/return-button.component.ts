@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-return-button',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReturnButtonComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+  
+  goToRoute(route: any){
+      
+    this.router.navigate([route])
 
+  }
 }
