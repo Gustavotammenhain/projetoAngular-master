@@ -10,7 +10,7 @@ export class FinancialSummaryComponent implements OnInit {
 
   constructor(private router: Router) {
     
-   }
+  }
 
   @Input() data: any;
 

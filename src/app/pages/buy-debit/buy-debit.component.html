@@ -1,73 +1,18 @@
-
 <div class="container">
   <app-return-button></app-return-button>
-    <div class="titles">
-        <label class="text">Estabelecimento</label>
-        <label class="text">Data da transação</label>
-        <label class="text">Valor da compra</label>
-    </div>
+  <div class="titles">
+    <label class="text">Estabelecimento</label>
+    <label class="text">Data da transação</label>
+    <label class="text">Valor da compra</label>
+  </div>
 
+  <div *ngFor="let item of compras">
     <app-purchase-description
-    description="Banca do tio Zé" 
-    date="12/01/2023" 
-    value="R$ 23,89" 
-     >
-   </app-purchase-description>   
-   
-   <app-purchase-description
-   description="Padaria bom pão" 
-   date="18/01/2023" 
-   value="R$ 11,20" 
-
+      description="{{ item.local }}"
+      date="{{ item.date }}"
+      value="{{ item.value }}"
     >
-  </app-purchase-description>     
-  
-  <app-purchase-description
-  description="La casa de pastel" 
-  date="27/01/2023" 
-  value="R$ 17,65" 
-
-   >
- </app-purchase-description>    
- 
- <app-purchase-description
- description="Restaurante vo Zena" 
-   date="29/01/2023" 
-   value="R$ 98,20" 
-
-  >
-</app-purchase-description>
-
-<app-purchase-description
-description="Banca do tio Zé" 
-date="12/01/2023" 
-value="R$ 23,89" 
-
- >
-</app-purchase-description>   
-
-<app-purchase-description
-description="Padaria bom pão" 
-date="18/01/2023" 
-value="R$ 11,20" 
-
->
-</app-purchase-description>     
-
-<app-purchase-description
-description="La casa de pastel" 
-date="27/01/2023" 
-value="R$ 17,65" 
-
->
-</app-purchase-description>    
-
-<app-purchase-description
-description="Restaurante vo Zena" 
-date="29/01/2023" 
-value="R$ 98,20" 
->
-</app-purchase-description>
-    
+    </app-purchase-description>
+  </div>
+  <button (click)="adicionar()">Adicionar item</button>
 </div>
-

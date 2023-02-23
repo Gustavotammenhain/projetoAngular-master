@@ -1,41 +1,38 @@
-
-
 <div class="container">
-    <div class="box">
-        <div class="title">Saldo: R$ {{data.totalBalance}}</div>
-    </div>
-    
+  <div class="box">
+    <div class="title">Saldo: R$ {{ data.totalBalance }}</div>
+  </div>
 
-    <div class="description">
-        <div class="sub-title">Compras nos ultimos 30 dias</div>
-        <div class="value">R$ {{data.lastBuys}}</div>
-    </div>
+  <div class="description">
+    <div class="sub-title">Compras nos ultimos 30 dias</div>
+    <div class="value">R$ {{ data.lastBuys }}</div>
+  </div>
 
-    <div class="progress">
-        <div class="progress-item">
-            <label for="">Debito</label>
-            <mat-progress-bar mode="determinate" value="{{data.totalDebit}}" ></mat-progress-bar>
-        </div>
-            
-        <div class="progress-item">
-            <label for="">Credito</label>
-            <mat-progress-bar mode="determinate" value="{{data.totalCredit}}" ></mat-progress-bar>
-        </div>
-            
-
+  <div class="progress">
+    <div class="progress-item">
+      <label for="">Debito</label>
+      <mat-progress-bar
+        mode="determinate"
+        value="{{ data.totalDebit }}"
+      ></mat-progress-bar>
     </div>
 
-    <div class="buttons">
+    <div class="progress-item">
+      <label for="">Credito</label>
+      <mat-progress-bar
+        mode="determinate"
+        value="{{ data.totalCredit }}"
+      ></mat-progress-bar>
+    </div>
+  </div>
 
-        
-        <div class="box separator" (click)="goToRoute('/buy-debit')">Compras Debito</div>
-
-        <div class="box" (click)="goToRoute('/buy-credit')">Compras Credito</div>
-       
-      
+  <div class="buttons">
+    <div class="box separator button" (click)="goToRoute('/buy-debit')">
+      Compras Debito
     </div>
 
-
-
-
+    <div class="box button" (click)="goToRoute('/buy-credit')">
+      Compras Credito
+    </div>
+  </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -9,7 +10,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PurchaseDescriptionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   @Input() description: string='';
   @Input() date: string='';
@@ -21,4 +22,21 @@ export class PurchaseDescriptionComponent implements OnInit {
     
   }
 
+  goToRoute(route: any){
+      
+    this.router.navigate([route])
+
+  }
+
+  detailedPurchese(){
+    console.log("descrip", this.description)
+    console.log("date", this.date)
+    console.log("vale", this.value)
+    if(this.router.url.includes('debit')){
+      this.router.navigate(['detailed-debit'], {state : {description: this.description, date: this.date, value: this.value}})
+    }else{
+      this.router.navigate(['detailed-credit'],  {state : {description: this.description, date: this.date, value: this.value}})
+    }
+    
+  }
 }

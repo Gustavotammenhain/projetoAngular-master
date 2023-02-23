@@ -1,5 +1,17 @@
-<div>
-    <app-return-button></app-return-button>
-    <app-card-data></app-card-data>
+<div class="container">
+  <app-return-button></app-return-button>
+  <div class="titles">
+    <label class="text">Estabelecimento</label>
+    <label class="text">Data da transação</label>
+    <label class="text">Valor da compra</label>
+  </div>
 
+  <div *ngFor="let item of compras">
+    <app-purchase-description
+      description="{{ item.local }}"
+      date="{{ item.date }}"
+      value="{{ item.value }}"
+    >
+    </app-purchase-description>
+  </div>
 </div>

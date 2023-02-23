@@ -1,5 +1,21 @@
-.div{
-    background: #BAE4FB;
-    border: 15px solid #6494DD;
-    border-radius: 30px;
+.container-detailed {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  align-items: center;
+  border: 4px solid blue;
+  padding: 10px;
+}
+
+
+
+.titles {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.text{
+  color: black;
 }

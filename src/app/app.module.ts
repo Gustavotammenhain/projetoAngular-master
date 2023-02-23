@@ -17,6 +17,7 @@ import { DetailedCreditComponent } from './pages/detailed-credit/detailed-credit
 import { MapsComponent } from './components/maps/maps.component';
 import { CardDataComponent } from './components/card-data/card-data.component';
 import { ReturnButtonComponent } from './components/return-button/return-button.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ReturnButtonComponent } from './components/return-button/return-button.
     DetailedCreditComponent,
     MapsComponent,
     CardDataComponent,
-    ReturnButtonComponent
+    ReturnButtonComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

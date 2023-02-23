@@ -1,11 +1,10 @@
-
 <div class="titles">
-    <label class="text">{{description}}</label>
-    <div class="dvider">|</div>
-    <label class="text">{{date}}</label>
-    <div class="dvider">|</div>
-    <label class="text">{{value}}</label>
-    <span class="circle">
-         <mat-icon>keyboard_arrow_right</mat-icon> 
-        </span>
+  <label class="text">{{ description }}</label>
+  <div class="dvider">|</div>
+  <label class="text">{{ date }}</label>
+  <div class="dvider">|</div>
+  <label class="text">{{ value }}</label>
+  <span class="circle">
+    <mat-icon (click)="detailedPurchese()">keyboard_arrow_right</mat-icon>
+  </span>
 </div>
