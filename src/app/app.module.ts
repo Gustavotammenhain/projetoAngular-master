@@ -18,6 +18,7 @@ import { MapsComponent } from './components/maps/maps.component';
 import { CardDataComponent } from './components/card-data/card-data.component';
 import { ReturnButtonComponent } from './components/return-button/return-button.component';
 import { HeaderComponent } from './components/header/header.component';
+import { InstallmentComponent } from './components/installment/installment.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { HeaderComponent } from './components/header/header.component';
     MapsComponent,
     CardDataComponent,
     ReturnButtonComponent,
-    HeaderComponent
+    HeaderComponent,
+    InstallmentComponent
   ],
   imports: [
     BrowserModule,

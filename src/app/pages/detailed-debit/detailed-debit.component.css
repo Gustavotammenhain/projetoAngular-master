@@ -1,10 +1,17 @@
+
+.page{
+
+  border-radius: 5px;
+ 
+  border: 4px solid #6494DD;
+
+}
 .container-detailed {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
-  border-radius: 5px;
   align-items: center;
-  border: 4px solid blue;
+  
   padding: 10px;
 }
 
