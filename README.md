@@ -1,4 +1,4 @@
-Protótipo realizado por Luiz Eduardo Soares, Rodrigo Alexandre e Gustavo Tammenhain.
+Protótipo realizado por Luiz Eduardo Soares, Rodrigo Alexandre, Gustavo Tammenhain e Alessandra.
 
 # ProjetoAngular
 
